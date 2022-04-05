@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Space X dashboard</title>
+        <link type="text/css" rel="stylesheet" href="index.css" />
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBR2u11BvM5pUECq41xZhFYkUWpvEa3Z7E&callback=initMap"></script>
+        <script src="Index.js" defer></script>
+        <script src="https://api.mapbox.com/mapbox-gl-js/v1.9.0/mapbox-gl.js"></script>
+        <link href="https://api.mapbox.com/mapbox-gl-js/v1.9.0/mapbox-gl.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="item1"> 
+                <img src="SpaceXafbeelding.png" alt="SpaceX logo" 
+                class="logo">
+                <p> Welkom in de ruimte
+                </br>
+                Houd hier uw vluchtgegevens in de gaten </p>
+            </div>
+
+       <div class="item2"> 
+          <h1>Nederlandse landingsplekken</h1>
+           <section class="container">
+               
+               <section class="maps">
+                   <div id="maps"></div>
+                   <section class="contbtn">
+                       <a id="zoek" class="zoek" onclick="getClicks();initMap();clearData();getAPIdata();onAPISucces()">Volgende mogelijkheid</a>
+                   </section>
+                <section class="plaatsnaam">
+                   <div id="plaatsnaam"></div>
+                   <div id="onderregel"></div>
+                   <div id="plaats"></div>
+                   <div id="herlaadpagina">
+                       <a href="" id="btn-reload" onclick="window.location.reload();">Eerste mogelijkheid</a>
+                   </div>
+                </section>
+               </section>
+
+            </section>
+       </div>
+
+       <div class="item3">
+               <section class="weeradvies">
+                   <h2>Uw persoonlijke landingsadvies:</h2>
+                   <div id="weeradvies"></div>
+                   <div id="weeradvies2"></div>
+                   <div id="conclusie"></div>
+               </section>     
+               <section class="weer">
+                   <div id="weer"></div>
+               </section>
+           </section>
+        </div>
+
+        <div class="item4"> 
+                <img src="nasa.jpg" alt="SpaceX raket" class="raket">
+            </br>
+            </br>
+                <a href = "https://twitter.com/spacex"> Twitter </a> 
+                </br>
+                <a href = "https://www.youtube.com/spacex"> Youtube </a> 
+                </br>
+                <a href="https://www.instagram.com/spacex"> Instagram </a>    
+        </div>  
+
+    </body>
+</html>
